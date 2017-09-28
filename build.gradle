@@ -5,11 +5,13 @@ buildscript {
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
         classpath "com.blackbaud:gradle-internal:4.+"
+        classpath "com.blackbaud:gradle-docker:1.+"
         classpath "com.blackbaud:gradle-templates:2.+"
     }
 }
 
 apply plugin: "blackbaud-internal-rest"
+apply plugin: "postgres"
 apply plugin: "blackbaud-templates"
 apply plugin: "spring-boot"
 
